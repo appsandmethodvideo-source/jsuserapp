@@ -575,7 +575,7 @@ font-weight: 900 !important;
 }
 
 /* Beautiful Numbers & Tabular Numerals Across the App */
-input[type="number"], input[type="tel"], #ui-balance, #ui-today-sub, #ui-total-sub, #ui-good-btn, #ui-bad-btn, .kb-num-key, .stat-box-modern h3 {
+input[type="number"], input[type="tel"], #ui-balance, #ui-today-sub, #ui-total-sub, #ui-good-btn, #ui-bad-btn, .stat-box-modern h3 {
 font-variant-numeric: tabular-nums;
 letter-spacing: -0.01em;
 }
@@ -594,161 +594,6 @@ contain: layout style;
 }
 .sub-item-card:active {
 transform: scale(0.99);
-}
-
-/* In-App Custom 3D Smart Keyboard */
-#js-custom-smart-keyboard {
-position: fixed;
-left: 0;
-right: 0;
-bottom: 0;
-z-index: 999990;
-background: linear-gradient(180deg, #0F172A 0%, #1E1B4B 55%, #090D16 100%);
-border-top: 2px solid rgba(56, 189, 248, 0.45);
-border-radius: 22px 22px 0 0;
-padding: 8px 6px 14px 6px;
-box-shadow: 0 -12px 35px rgba(0, 0, 0, 0.55);
-transform: translateY(110%);
-transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1);
-user-select: none;
--webkit-user-select: none;
-max-width: 480px;
-margin: 0 auto;
-}
-#js-custom-smart-keyboard.kb-open {
-transform: translateY(0%);
-}
-.kb-top-bar {
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 6px;
-padding: 2px 6px 7px 6px;
-border-bottom: 1px solid rgba(255,255,255,0.1);
-margin-bottom: 6px;
-}
-.kb-preview-pill {
-flex: 1;
-background: rgba(255,255,255,0.09);
-border: 1px solid rgba(255,255,255,0.16);
-border-radius: 10px;
-padding: 5px 10px;
-color: #F8FAFC;
-font-size: 13px;
-font-weight: 800;
-white-space: nowrap;
-overflow: hidden;
-text-overflow: ellipsis;
-min-height: 28px;
-display: flex;
-align-items: center;
-}
-.kb-chip-row {
-display: flex;
-gap: 5px;
-overflow-x: auto;
-padding: 0 4px 6px 4px;
-scrollbar-width: none;
-}
-.kb-chip-row::-webkit-scrollbar { display: none; }
-.kb-domain-chip {
-background: rgba(56, 189, 248, 0.16);
-border: 1px solid rgba(56, 189, 248, 0.4);
-color: #7DD3FC;
-padding: 4px 9px;
-border-radius: 99px;
-font-size: 11.5px;
-font-weight: 800;
-cursor: pointer;
-flex-shrink: 0;
-touch-action: manipulation;
-}
-.kb-domain-chip:active {
-transform: scale(0.93);
-background: #0284C7;
-color: #FFFFFF;
-}
-.kb-row {
-display: flex;
-justify-content: center;
-gap: 4.5px;
-margin-bottom: 5.5px;
-width: 100%;
-}
-.kb-key {
-flex: 1;
-min-width: 0;
-height: 41px;
-border-radius: 10px;
-border: 1px solid rgba(255,255,255,0.16);
-background: linear-gradient(180deg, #334155 0%, #1E293B 100%);
-color: #FFFFFF;
-font-size: 15.5px;
-font-weight: 800;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-box-shadow: 0 3px 0 #090D16, 0 4px 8px rgba(0,0,0,0.3);
-transition: transform 0.06s ease, background 0.1s ease;
-touch-action: manipulation;
-}
-.kb-key:active {
-transform: translateY(2px);
-box-shadow: 0 1px 0 #090D16;
-background: linear-gradient(180deg, #EB1C24 0%, #B91C1C 100%);
-}
-.kb-num-key {
-height: 40px;
-background: linear-gradient(180deg, #1E3A8A 0%, #172554 100%);
-border-color: rgba(96, 165, 250, 0.42);
-color: #FEF08A;
-font-size: 17px;
-font-weight: 900;
-text-shadow: 0 1px 4px rgba(0,0,0,0.6);
-}
-.kb-numpad-grid {
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 8px;
-padding: 4px 8px;
-}
-.kb-numpad-btn {
-height: 50px;
-border-radius: 14px;
-border: 1.5px solid rgba(96, 165, 250, 0.4);
-background: linear-gradient(180deg, #1E293B 0%, #0F172A 100%);
-color: #FEF08A;
-font-size: 22px;
-font-weight: 900;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-box-shadow: 0 4px 0 #020617, 0 6px 12px rgba(0,0,0,0.35);
-touch-action: manipulation;
-}
-.kb-numpad-btn:active {
-transform: translateY(3px);
-box-shadow: 0 1px 0 #020617;
-background: linear-gradient(180deg, #0284C7 0%, #0369A1 100%);
-color: #FFFFFF;
-}
-.kb-key-func {
-background: linear-gradient(180deg, #475569 0%, #334155 100%);
-color: #E2E8F0;
-font-size: 13px;
-}
-.kb-key-done {
-background: linear-gradient(135deg, #10B981 0%, #059669 100%);
-border-color: #34D399;
-color: #FFFFFF;
-font-size: 13.5px;
-}
-.kb-key-danger {
-background: linear-gradient(135deg, #EF4444 0%, #B91C1C 100%);
-border-color: #F87171;
-color: #FFFFFF;
 }
 
 /* 3D Clickable Excel Upload Button Card */
@@ -1784,13 +1629,13 @@ if(splash) { splash.style.opacity = '0'; setTimeout(function(){ if(splash.parent
 <div>
 <div class="input-group">
 <label data-i18n="login_id_label" style="color:#374151; font-size:15px;">অ্যাকাউন্ট নাম্বার বা জিমেইল</label>
-<input type="text" id="log-id" placeholder="017XXXXXXXX or user@gmail.com" style="background:#EFECE6; border:none; border-radius:12px; padding:18px 20px; font-size:17px; color:#374151;">
+<input type="text" id="log-id" autocomplete="username" autocapitalize="none" autocorrect="off" spellcheck="false" inputmode="email" placeholder="017XXXXXXXX or user@gmail.com" style="background:#EFECE6; border:none; border-radius:12px; padding:18px 20px; font-size:17px; color:#374151;">
 </div>
 <div class="input-group" style="margin-top:20px;">
 <label data-i18n="login_pin_label" style="color:#374151; font-size:15px;">পিন / পাসওয়ার্ড</label>
 <div class="password-wrapper">
 <i class="fa-solid fa-lock" style="position:absolute; left:18px; top:50%; transform:translateY(-50%); color:#6B7280; font-size:18px; z-index:5;"></i>
-<input type="password" id="log-pass" placeholder="• • • • • •" style="background:#FFFFFF; border:1.5px solid #D1D5DB; border-radius:12px; padding:18px 45px 18px 48px; font-size:18px; text-align:center; letter-spacing:4px;">
+<input type="password" id="log-pass" autocomplete="current-password" autocapitalize="none" autocorrect="off" spellcheck="false" onkeydown="if(event.key==='Enter'){login();}" placeholder="• • • • • •" style="background:#FFFFFF; border:1.5px solid #D1D5DB; border-radius:12px; padding:18px 45px 18px 48px; font-size:18px; text-align:center; letter-spacing:4px;">
 <i class="fa-solid fa-eye-slash toggle-password" onclick="togglePass('log-pass', this)"></i>
 </div>
 </div>
@@ -4536,25 +4381,25 @@ rocket: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox
 binance: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%231E2329'></rect><polygon points='50,22 64,36 57,43 50,36 43,43 36,36' fill='%23F3BA2F'></polygon><polygon points='50,78 64,64 57,57 50,64 43,57 36,64' fill='%23F3BA2F'></polygon><polygon points='28,50 35,43 42,50 35,57' fill='%23F3BA2F'></polygon><polygon points='72,50 65,43 58,50 65,57' fill='%23F3BA2F'></polygon><polygon points='50,42 58,50 50,58 42,50' fill='%23F3BA2F'></polygon></svg>"
 };
 if (lower.includes('bkash') || lower.includes('বিকাশ')) {
-const domSrc = document.getElementById('ui-wd-logo-bkash')?.getAttribute('src') || '';
+const _bkEl = document.getElementById('ui-wd-logo-bkash'); const domSrc = (_bkEl && _bkEl.getAttribute('src')) || '';
 const logoUrl = window.normalizeSmartImageUrl((appSettings && appSettings.wdLogoBkash) || domSrc) || defaultSvgs.bkash;
 const displayName = (appSettings && appSettings.wdNameBkash) ? appSettings.wdNameBkash : 'বিকাশ (Bkash)';
 return { logo: logoUrl, fallback: defaultSvgs.bkash, color: '#E2136E', bg: '#FDF2F8', border: '#FBCFE8', name: displayName, key: 'Bkash' };
 }
 if (lower.includes('nagad') || lower.includes('নগদ')) {
-const domSrc = document.getElementById('ui-wd-logo-nagad')?.getAttribute('src') || '';
+const _ngEl = document.getElementById('ui-wd-logo-nagad'); const domSrc = (_ngEl && _ngEl.getAttribute('src')) || '';
 const logoUrl = window.normalizeSmartImageUrl((appSettings && appSettings.wdLogoNagad) || domSrc) || defaultSvgs.nagad;
 const displayName = (appSettings && appSettings.wdNameNagad) ? appSettings.wdNameNagad : 'নগদ (Nagad)';
 return { logo: logoUrl, fallback: defaultSvgs.nagad, color: '#ED1C24', bg: '#FFF7ED', border: '#FED7AA', name: displayName, key: 'Nagad' };
 }
 if (lower.includes('rocket') || lower.includes('রকেট')) {
-const domSrc = document.getElementById('ui-wd-logo-rocket')?.getAttribute('src') || '';
+const _rkEl = document.getElementById('ui-wd-logo-rocket'); const domSrc = (_rkEl && _rkEl.getAttribute('src')) || '';
 const logoUrl = window.normalizeSmartImageUrl((appSettings && appSettings.wdLogoRocket) || domSrc) || defaultSvgs.rocket;
 const displayName = (appSettings && appSettings.wdNameRocket) ? appSettings.wdNameRocket : 'রকেট (Rocket)';
 return { logo: logoUrl, fallback: defaultSvgs.rocket, color: '#8C3494', bg: '#FAF5FF', border: '#E9D5FF', name: displayName, key: 'Rocket' };
 }
 if (lower.includes('binance') || lower.includes('বাইনান্স') || lower.includes('usdt')) {
-const domSrc = document.getElementById('ui-wd-logo-binance')?.getAttribute('src') || '';
+const _bnEl = document.getElementById('ui-wd-logo-binance'); const domSrc = (_bnEl && _bnEl.getAttribute('src')) || '';
 const logoUrl = window.normalizeSmartImageUrl((appSettings && appSettings.wdLogoBinance) || domSrc) || defaultSvgs.binance;
 const displayName = (appSettings && appSettings.wdNameBinance) ? appSettings.wdNameBinance : 'Binance Pay';
 return { logo: logoUrl, fallback: defaultSvgs.binance, color: '#D97706', bg: '#FEFCE8', border: '#FEF08A', name: displayName, key: 'Binance' };
@@ -4634,24 +4479,25 @@ safeStorage.setItem('js_user_preauth_screen', activeEl.id);
 }
 const mc = document.getElementById('main-content');
 if (mc) safeStorage.setItem('js_user_scroll_top', String(mc.scrollTop || 0));
+const _gv = function(id, defVal) { var el = document.getElementById(id); return (el && el.value) ? el.value : (defVal || ''); };
 const drafts = {
-logId: document.getElementById('log-id')?.value || '',
-regName: document.getElementById('reg-name')?.value || '',
-regPhone: document.getElementById('reg-phone')?.value || '',
-regEmail: document.getElementById('reg-email')?.value || '',
-regTele: document.getElementById('reg-tele')?.value || '',
+logId: _gv('log-id'),
+regName: _gv('reg-name'),
+regPhone: _gv('reg-phone'),
+regEmail: _gv('reg-email'),
+regTele: _gv('reg-tele'),
 subDate: window.getLockedTodayDateStr(),
-subCat: document.getElementById('sub-cat')?.value || '',
-subPaste: document.getElementById('sub-paste-ids')?.value || '',
-wdAmount: document.getElementById('wd-amount')?.value || '',
-wdMethod: document.getElementById('wd-method')?.value || 'Bkash',
-wdAcc: document.getElementById('wd-acc')?.value || '',
-tfPhone: document.getElementById('tf-receiver-phone')?.value || '',
-tfCardNum: document.getElementById('tf-card-num')?.value || '',
-tfCardDate: document.getElementById('tf-card-date')?.value || '',
-tfAmount: document.getElementById('tf-amount')?.value || '',
-chkDate: document.getElementById('chk-date')?.value || '',
-chkIds: document.getElementById('chk-ids')?.value || ''
+subCat: _gv('sub-cat'),
+subPaste: _gv('sub-paste-ids'),
+wdAmount: _gv('wd-amount'),
+wdMethod: _gv('wd-method', 'Bkash'),
+wdAcc: _gv('wd-acc'),
+tfPhone: _gv('tf-receiver-phone'),
+tfCardNum: _gv('tf-card-num'),
+tfCardDate: _gv('tf-card-date'),
+tfAmount: _gv('tf-amount'),
+chkDate: _gv('chk-date'),
+chkIds: _gv('chk-ids')
 };
 safeStorage.setItem('js_user_form_drafts', JSON.stringify(drafts));
 } catch(e) {}
@@ -4870,7 +4716,10 @@ firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const auth = firebase.auth();
 try {
-db.settings({ experimentalAutoDetectLongPolling: true });
+db.settings({ experimentalAutoDetectLongPolling: true, cacheSizeBytes: firebase.firestore.CACHE_SIZE_UNLIMITED });
+} catch(e) {}
+try {
+db.enablePersistence({ synchronizeTabs: true }).catch(function() {});
 } catch(e) {}
 
 // Universal Firestore REST API Parser & Hydrator for User App (100% Instant Data in WebView & Canvas)
@@ -5697,58 +5546,110 @@ btn.disabled = false;
 }
 
 async function login() {
-let loginId = document.getElementById('log-id').value;
-const pass = document.getElementById('log-pass').value;
+var rawId = (document.getElementById('log-id').value || '').replace(/[\u200B-\u200D\uFEFF]/g, '').trim();
+var rawPass = (document.getElementById('log-pass').value || '').replace(/[\u200B-\u200D\uFEFF]/g, '');
 
-loginId = toEngNum(loginId);
+var loginId = toEngNum(rawId).trim();
+var pass = rawPass;
+var passTrim = rawPass.trim();
+var passEng = toEngNum(passTrim);
 
-if(!loginId || !pass) return Toast.fire({ icon: 'error', title: 'Enter Phone/Gmail and Password' });
+if(!loginId || !passTrim) return Toast.fire({ icon: 'error', title: 'Enter Phone/Gmail and Password' });
 
 const btn = document.getElementById('btn-login');
 btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Logging in...';
 btn.disabled = true;
 
 try {
-let authEmail = loginId;
+let authEmail = '';
+let matchedPhoneDoc = null;
+let emailCandidates = [];
 
 if(!loginId.includes('@')) {
-let phoneSearch = loginId;
-if(phoneSearch.startsWith("+88")) phoneSearch = phoneSearch.substring(3);
-if(phoneSearch.startsWith("88") && phoneSearch.length === 13) phoneSearch = phoneSearch.substring(2);
+let cleanPhone = loginId.replace(/[\s\-()]/g, '');
+let base11 = cleanPhone;
+if(base11.startsWith('+88')) base11 = base11.substring(3);
+else if(base11.startsWith('88') && base11.length === 13) base11 = base11.substring(2);
+if(base11.length === 10 && base11.startsWith('1')) base11 = '0' + base11;
 
-let userSnap;
-try { userSnap = await db.collection("users").where("phone", "==", phoneSearch).get({source: 'server'}); }
-catch(e) { userSnap = await db.collection("users").where("phone", "==", phoneSearch).get(); }
+let phoneCandidates = [];
+[base11, cleanPhone, '+88' + base11, '88' + base11, loginId].forEach(function(p) {
+if(p && phoneCandidates.indexOf(p) === -1) phoneCandidates.push(p);
+});
 
-if(userSnap.empty && phoneSearch !== loginId) {
-try { userSnap = await db.collection("users").where("phone", "==", loginId).get({source: 'server'}); }
-catch(e) { userSnap = await db.collection("users").where("phone", "==", loginId).get(); }
+let userSnap = null;
+for (let i = 0; i < phoneCandidates.length; i++) {
+let cand = phoneCandidates[i];
+try { userSnap = await db.collection("users").where("phone", "==", cand).limit(1).get({source: 'server'}); }
+catch(e) { userSnap = await db.collection("users").where("phone", "==", cand).limit(1).get(); }
+if (userSnap && !userSnap.empty) {
+matchedPhoneDoc = userSnap.docs[0];
+break;
+}
 }
 
-if(!userSnap || userSnap.empty) throw new Error("No account found with this phone number.");
+if(!matchedPhoneDoc) throw new Error("No account found with this phone number.");
 
-authEmail = userSnap.docs[0].data().email;
-if(!authEmail) throw new Error("Email not found for this account.");
+let foundEmail = (matchedPhoneDoc.data().email || '').trim();
+if(!foundEmail) throw new Error("Email not found for this account.");
+authEmail = foundEmail.toLowerCase();
+emailCandidates.push(authEmail);
+if (foundEmail !== authEmail) emailCandidates.push(foundEmail);
+} else {
+let cleanEmail = loginId.replace(/\s+/g, '');
+authEmail = cleanEmail.toLowerCase();
+emailCandidates.push(authEmail);
+if (cleanEmail !== authEmail) emailCandidates.push(cleanEmail);
 }
+
+let passCandidates = [];
+[pass, passTrim, passEng].forEach(function(p) {
+if (p && passCandidates.indexOf(p) === -1) passCandidates.push(p);
+});
 
 let credUid = null;
 let userDoc = null;
+let lastAuthErr = null;
+
+for (let ei = 0; ei < emailCandidates.length && !credUid; ei++) {
+for (let pi = 0; pi < passCandidates.length && !credUid; pi++) {
 try {
-const cred = await auth.signInWithEmailAndPassword(authEmail, pass);
+const cred = await auth.signInWithEmailAndPassword(emailCandidates[ei], passCandidates[pi]);
 credUid = cred.user.uid;
+authEmail = emailCandidates[ei];
 } catch (authErr) {
-const fbSnap = await db.collection("users").where("email", "==", authEmail).limit(1).get();
-if (!fbSnap.empty) {
-const fbData = fbSnap.docs[0].data();
-if (fbData.plainPassword && String(fbData.plainPassword).trim() === String(pass).trim()) {
-credUid = fbSnap.docs[0].id;
-userDoc = fbSnap.docs[0];
+lastAuthErr = authErr;
+}
+}
+}
+
+if (!credUid) {
+let fbDoc = matchedPhoneDoc;
+if (!fbDoc) {
+for (let ei = 0; ei < emailCandidates.length && !fbDoc; ei++) {
+try {
+const fbSnap = await db.collection("users").where("email", "==", emailCandidates[ei]).limit(1).get({source: 'server'});
+if (!fbSnap.empty) fbDoc = fbSnap.docs[0];
+} catch (e) {
+const fbSnap2 = await db.collection("users").where("email", "==", emailCandidates[ei]).limit(1).get();
+if (!fbSnap2.empty) fbDoc = fbSnap2.docs[0];
+}
+}
+}
+if (fbDoc && fbDoc.exists) {
+const fbData = fbDoc.data();
+const storedPass = fbData.plainPassword ? String(fbData.plainPassword).trim() : '';
+const storedPassEng = storedPass ? toEngNum(storedPass) : '';
+if (storedPass && (storedPass === passTrim || storedPass === pass || storedPassEng === passEng)) {
+credUid = fbDoc.id;
+userDoc = fbDoc;
+authEmail = fbData.email || authEmail;
 window.currentUserDocId = credUid;
 } else {
-throw authErr;
+throw (lastAuthErr || new Error("Wrong password"));
 }
 } else {
-throw authErr;
+throw (lastAuthErr || new Error("No account found"));
 }
 }
 
@@ -5756,11 +5657,15 @@ if (!userDoc && credUid) {
 try { userDoc = await db.collection("users").doc(credUid).get({source: 'server'}); }
 catch(e) { userDoc = await db.collection("users").doc(credUid).get(); }
 }
+if ((!userDoc || !userDoc.exists) && matchedPhoneDoc) {
+userDoc = matchedPhoneDoc;
+credUid = matchedPhoneDoc.id;
+}
 
 if(userDoc && userDoc.exists) {
 let uData = userDoc.data();
 safeStorage.setItem('js_cached_user', JSON.stringify(uData));
-currentUserData = { ...uData };
+currentUserData = Object.assign({}, uData);
 document.getElementById('ui-name').innerText = uData.fullName || "User";
 window.syncCardBalanceMirror(uData.balance);
 if(document.getElementById('ui-good-btn')) document.getElementById('ui-good-btn').innerText = uData.goodIds || 0;
@@ -5779,19 +5684,22 @@ nav('home-screen');
 Toast.fire({ icon: 'success', title: 'Welcome Back!' });
 
 } catch (e) {
-if (e.code === 'auth/invalid-credential' || e.code === 'auth/wrong-password' || e.code === 'auth/user-not-found' || e.code === 'auth/invalid-email') {
-Swal.fire('Error', 'সঠিক তথ্য দিন, আপনার নাম্বার বা পাসওয়ার্ডটি ভুল।', 'error');
+if (e.code === 'auth/invalid-credential' || e.code === 'auth/wrong-password' || e.code === 'auth/user-not-found' || e.code === 'auth/invalid-email' || e.message === 'Wrong password' || e.message === 'No account found') {
+Swal.fire('Error', 'সঠিক তথ্য দিন, আপনার নাম্বার/জিমেইল বা পাসওয়ার্ডটি ভুল।', 'error');
 } else if (e.message === "No account found with this phone number." || e.message === "Email not found for this account.") {
 Swal.fire('Error', 'এই নম্বরে কোনো অ্যাকাউন্ট পাওয়া যায়নি। নাম্বারটি চেক করুন।', 'error');
+} else if (e.code === 'auth/network-request-failed') {
+Swal.fire('Error', 'ইন্টারনেট কানেকশন দুর্বল! নেট চেক করে আবার চেষ্টা করুন।', 'error');
+} else if (e.code === 'auth/too-many-requests') {
+Swal.fire('Error', 'অনেকবার ভুল চেষ্টা করা হয়েছে। কয়েক মিনিট পর আবার চেষ্টা করুন।', 'error');
 } else {
-Swal.fire('Error', 'লগইন করতে সমস্যা হচ্ছে। (' + e.message + ')', 'error');
+Swal.fire('Error', 'লগইন করতে সমস্যা হচ্ছে। (' + (e.message || e) + ')', 'error');
 }
 } finally {
 btn.innerHTML = '<span data-i18n="login_btn_text">' + (currentLang === 'en' ? 'Log In' : 'লগ ইন') + '</span>';
 btn.disabled = false;
 }
 }
-
 function logout() {
 Swal.fire({
 title: 'Logout?',
@@ -5977,7 +5885,7 @@ else document.getElementById('ui-name').innerText = "Connecting...";
 });
 
 let isFirstChatLoad = true;
-db.collection("support_messages").where("uid", "==", user.uid).onSnapshot(snap => {
+db.collection("support_messages").where("uid", "==", user.uid).limit(40).onSnapshot(snap => {
 let docs = snap.docs.map(d => d.data());
 docs.sort((a, b) => getSortTime(a.timestamp) - getSortTime(b.timestamp));
 
@@ -6052,11 +5960,11 @@ document.getElementById('transfer-history-list').innerHTML = html;
 };
 
 let isFirstReceivedLoad = true;
-db.collection("fund_transfers").where("senderUid", "==", user.uid).onSnapshot(snap => {
+db.collection("fund_transfers").where("senderUid", "==", user.uid).limit(30).onSnapshot(snap => {
 try { sentTransfersData = snap.docs.map(d => ({id: d.id, ...d.data()})); renderAllTransfers(); } catch(e) {}
 });
 
-db.collection("fund_transfers").where("receiverUid", "==", user.uid).onSnapshot(snap => {
+db.collection("fund_transfers").where("receiverUid", "==", user.uid).limit(30).onSnapshot(snap => {
 try {
 receivedTransfersData = snap.docs.map(d => ({id: d.id, ...d.data()}));
 renderAllTransfers();
@@ -6238,8 +6146,8 @@ let unreadCount = 0;
 let newestNoticeObj = null;
 let newestNoticeTime = 0;
 const nowSec = Math.floor(Date.now() / 1000);
-const fromDateVal = (document.getElementById('notice-from-date')?.value || '').trim();
-const toDateVal = (document.getElementById('notice-to-date')?.value || '').trim();
+const _nfEl = document.getElementById('notice-from-date'); const fromDateVal = (_nfEl && _nfEl.value ? _nfEl.value : '').trim();
+const _ntEl = document.getElementById('notice-to-date'); const toDateVal = (_ntEl && _ntEl.value ? _ntEl.value : '').trim();
 const isDateFilterActive = Boolean(fromDateVal || toDateVal);
 const filterLabelEl = document.getElementById('notice-filter-active-label');
 if (filterLabelEl) {
@@ -6339,7 +6247,7 @@ d.banner || '',
 isFirstNoticeLoad = false;
 } catch(e) {}
 };
-db.collection("global_notice").onSnapshot(snap => { window.renderNoticesSnapDocs(snap.docs, true, snap); }, () => {});
+db.collection("global_notice").limit(25).onSnapshot(snap => { window.renderNoticesSnapDocs(snap.docs, true, snap); }, () => {});
 window.toggleNoticeCalendarBox = function() {
 const panel = document.getElementById('notice-calendar-filter-panel');
 const chev = document.getElementById('notice-cal-chevron');
@@ -6363,7 +6271,7 @@ window.renderNoticesSnapDocs(window.allLoadedNoticesList.map(d => ({ data: () =>
 }
 };
 
-db.collection("submissions").where("uid", "==", user.uid).onSnapshot(snap => {
+db.collection("submissions").where("uid", "==", user.uid).limit(80).onSnapshot(snap => {
 try {
 const list1 = document.getElementById('submit-history-list');
 
@@ -6486,7 +6394,7 @@ safeStorage.setItem('js_cached_sub_history_html_v2', html);
 let isFirstWdLoad = true;
 window.knownWdStatuses = {};
 
-db.collection("withdraw_requests").where("uid", "==", user.uid).onSnapshot(snap => {
+db.collection("withdraw_requests").where("uid", "==", user.uid).limit(40).onSnapshot(snap => {
 try {
 if(!isFirstWdLoad) {
 snap.docChanges().forEach(change => {
@@ -6543,9 +6451,11 @@ window._currentHandleUserData(restUserDoc, null);
 }
 } catch (e) {}
 };
-setTimeout(() => {
-window.syncUserViaRestHydrator();
-}, 60);
+setTimeout(function() {
+var hasCats = (typeof catRates === 'object' && catRates && Object.keys(catRates).length > 0);
+var hasSet = (typeof appSettings === 'object' && appSettings && Object.keys(appSettings).length > 0);
+if (!hasCats || !hasSet) { window.syncUserViaRestHydrator(); }
+}, 7000);
 
 auth.onAuthStateChanged(user => {
 if (user) {
@@ -7142,7 +7052,7 @@ return Swal.fire('সাবমিট বন্ধ রয়েছে', window.ge
 const cat = document.getElementById('sub-cat').value;
 const dateStr = window.enforceLockedSubDate();
 const fileInput = document.getElementById('ac24-user-xlsx-file');
-const pastedText = (document.getElementById('sub-paste-ids')?.value || '').trim();
+const _spEl = document.getElementById('sub-paste-ids'); const pastedText = (_spEl && _spEl.value ? _spEl.value : '').trim();
 const activeFileObj = (fileInput && fileInput.files && fileInput.files[0]) ? fileInput.files[0] : window.selectedUserXlsxFile;
 
 const hasNativeFile = Boolean(activeFileObj);
@@ -7729,7 +7639,7 @@ const lastTimeValEl = document.getElementById('user-last-time-val');
 if (!box || !listEl) return;
 
 const isGlobalOff = (appSettings && appSettings.submitStatus === 'off');
-const activeNames = Object.keys(catRates || {}).filter(k => (catRates[k]?.status || 'on') !== 'off');
+const activeNames = Object.keys(catRates || {}).filter(k => ((catRates[k] && catRates[k].status) || 'on') !== 'off');
 
 if (isGlobalOff || activeNames.length === 0) {
 box.style.display = 'none';
@@ -8086,255 +7996,6 @@ window.addEventListener('unhandledrejection', function(e) { console.warn('Handle
 
 </script>
 
-<!-- IN-APP CUSTOM 3D SMART KEYBOARD (FOR LOGIN, REGISTER, NUMBERS & ALL INPUTS) -->
-<div id="js-custom-smart-keyboard" aria-hidden="true">
-<div class="kb-top-bar">
-<div class="kb-preview-pill" id="kb-live-preview">টাইপ করুন...</div>
-<button type="button" class="kb-domain-chip" onclick="window.kbPasteClipboard()" style="background:rgba(16,185,129,0.2); border-color:#10B981; color:#6EE7B7;">
-<i class="fa-solid fa-paste"></i> পেস্ট
-</button>
-<button type="button" class="kb-domain-chip" onclick="window.kbSwitchNativeKeyboard()" style="background:rgba(245,158,11,0.2); border-color:#F59E0B; color:#FDE047;">
-<i class="fa-solid fa-keyboard"></i> বাংলা/OS
-</button>
-<button type="button" class="kb-domain-chip kb-key-done" onclick="window.closeCustomSmartKeyboard()" style="padding:5px 12px; color:#fff;">
-<i class="fa-solid fa-check"></i> সম্পন্ন
-</button>
-</div>
-<div class="kb-chip-row" id="kb-quick-chips">
-<span class="kb-domain-chip" onclick="window.kbInsertText('@gmail.com')">@gmail.com</span>
-<span class="kb-domain-chip" onclick="window.kbInsertText('.com')">.com</span>
-<span class="kb-domain-chip" onclick="window.kbInsertText('01')">01</span>
-<span class="kb-domain-chip" onclick="window.kbInsertText('@hotmail.com')">@hotmail.com</span>
-<span class="kb-domain-chip" onclick="window.kbInsertText('@outlook.com')">@outlook.com</span>
-<span class="kb-domain-chip" onclick="window.kbInsertText('@')">@</span>
-<span class="kb-domain-chip" onclick="window.kbInsertText('_')">_</span>
-</div>
-<div id="kb-layout-container"></div>
-</div>
-
-<script>
-(function initCustomSmartKeyboardSystem() {
-window._kbTargetInput = null;
-window._kbIsUpper = false;
-window._kbIsSymbols = false;
-window._kbForceNative = false;
-
-const NUM_ROW = ['1','2','3','4','5','6','7','8','9','0'];
-const QWERTY_1 = ['q','w','e','r','t','y','u','i','o','p'];
-const QWERTY_2 = ['a','s','d','f','g','h','j','k','l'];
-const QWERTY_3 = ['z','x','c','v','b','n','m'];
-const SYM_1 = ['@','#','$','%','&','*','-','+','(',')'];
-const SYM_2 = ['!','"',"'",':',';','/','?','_','='];
-const SYM_3 = ['.',',','~','`','|','+','^'];
-
-function isNumericField(el) {
-if (!el) return false;
-const id = (el.id || '').toLowerCase();
-const type = (el.getAttribute('type') || '').toLowerCase();
-return type === 'number' || type === 'tel' || ['wd-amount', 'wd-acc', 'reg-phone', 'trans-amount', 'reset-phone'].includes(id);
-}
-
-window.updateKbPreview = function() {
-const prev = document.getElementById('kb-live-preview');
-const el = window._kbTargetInput;
-if (!prev || !el) return;
-const isPass = (el.getAttribute('type') || '').toLowerCase() === 'password';
-const val = String(el.value || '');
-if (!val) {
-prev.innerHTML = `<span style="color:#94A3B8; font-weight:600;">${el.placeholder || 'টাইপ করুন...'}</span>`;
-} else {
-prev.textContent = isPass ? '•'.repeat(val.length) : val;
-}
-};
-
-window.renderCustomSmartKeyboard = function() {
-const cont = document.getElementById('kb-layout-container');
-const chips = document.getElementById('kb-quick-chips');
-if (!cont) return;
-const el = window._kbTargetInput;
-const numMode = isNumericField(el);
-if (chips) chips.style.display = numMode ? 'none' : 'flex';
-
-if (numMode) {
-cont.innerHTML = `
-<div class="kb-numpad-grid">
-<button type="button" class="kb-numpad-btn" onclick="window.kbPressKey('1')">1</button>
-<button type="button" class="kb-numpad-btn" onclick="window.kbPressKey('2')">2</button>
-<button type="button" class="kb-numpad-btn" onclick="window.kbPressKey('3')">3</button>
-<button type="button" class="kb-numpad-btn" onclick="window.kbPressKey('4')">4</button>
-<button type="button" class="kb-numpad-btn" onclick="window.kbPressKey('5')">5</button>
-<button type="button" class="kb-numpad-btn" onclick="window.kbPressKey('6')">6</button>
-<button type="button" class="kb-numpad-btn" onclick="window.kbPressKey('7')">7</button>
-<button type="button" class="kb-numpad-btn" onclick="window.kbPressKey('8')">8</button>
-<button type="button" class="kb-numpad-btn" onclick="window.kbPressKey('9')">9</button>
-<button type="button" class="kb-numpad-btn" style="font-size:18px; color:#38BDF8;" onclick="window.kbPressKey('.')">.</button>
-<button type="button" class="kb-numpad-btn" onclick="window.kbPressKey('0')">0</button>
-<button type="button" class="kb-numpad-btn kb-key-danger" style="color:#fff; font-size:18px;" onclick="window.kbBackspace()"><i class="fa-solid fa-delete-left"></i></button>
-<button type="button" class="kb-numpad-btn" style="font-size:16px; color:#A7F3D0;" onclick="window.kbInsertText('00')">00</button>
-<button type="button" class="kb-numpad-btn" style="font-size:15px; color:#FCA5A5;" onclick="window.kbClearAll()">Clear</button>
-<button type="button" class="kb-numpad-btn kb-key-done" style="font-size:16px; color:#fff;" onclick="window.closeCustomSmartKeyboard()">OK ✓</button>
-</div>
-`;
-return;
-}
-
-const r1 = window._kbIsSymbols ? SYM_1 : QWERTY_1.map(c => window._kbIsUpper ? c.toUpperCase() : c);
-const r2 = window._kbIsSymbols ? SYM_2 : QWERTY_2.map(c => window._kbIsUpper ? c.toUpperCase() : c);
-const r3 = window._kbIsSymbols ? SYM_3 : QWERTY_3.map(c => window._kbIsUpper ? c.toUpperCase() : c);
-
-const mkRow = (arr, extraClass = '') => arr.map(ch => {
-const safeCh = (ch === "'") ? "\\'" : ch;
-return `<button type="button" class="kb-key ${extraClass}" onclick="window.kbPressKey('${safeCh}')">${ch}</button>`;
-}).join('');
-
-cont.innerHTML = `
-<div class="kb-row">${mkRow(NUM_ROW, 'kb-num-key')}</div>
-<div class="kb-row">${mkRow(r1)}</div>
-<div class="kb-row" style="padding:0 10px;">${mkRow(r2)}</div>
-<div class="kb-row">
-<button type="button" class="kb-key kb-key-func" style="flex:1.4;" onclick="window.kbToggleShift()">
-<i class="fa-solid fa-up-long" style="color:${window._kbIsUpper ? '#38BDF8' : '#fff'};"></i>
-</button>
-${mkRow(r3)}
-<button type="button" class="kb-key kb-key-danger" style="flex:1.4;" onclick="window.kbBackspace()">
-<i class="fa-solid fa-delete-left"></i>
-</button>
-</div>
-<div class="kb-row">
-<button type="button" class="kb-key kb-key-func" style="flex:1.5;" onclick="window.kbToggleSymbols()">
-${window._kbIsSymbols ? 'ABC' : '?123'}
-</button>
-<button type="button" class="kb-key kb-key-func" style="flex:1;" onclick="window.kbPressKey('@')">@</button>
-<button type="button" class="kb-key" style="flex:4.2; font-size:13px; color:#CBD5E1;" onclick="window.kbPressKey(' ')">Space</button>
-<button type="button" class="kb-key kb-key-func" style="flex:1;" onclick="window.kbPressKey('.')">.</button>
-<button type="button" class="kb-key kb-key-done" style="flex:1.8;" onclick="window.closeCustomSmartKeyboard()">
-সম্পন্ন ✓
-</button>
-</div>
-`;
-};
-
-function dispatchInputEvents(el) {
-if (!el) return;
-try {
-el.dispatchEvent(new Event('input', { bubbles: true }));
-el.dispatchEvent(new Event('change', { bubbles: true }));
-el.dispatchEvent(new KeyboardEvent('keyup', { bubbles: true }));
-} catch (e) {}
-window.updateKbPreview();
-}
-
-window.kbPressKey = function(ch) {
-const el = window._kbTargetInput;
-if (!el || el.readOnly || el.disabled) return;
-el.value = String(el.value || '') + ch;
-dispatchInputEvents(el);
-};
-
-window.kbInsertText = function(txt) {
-const el = window._kbTargetInput;
-if (!el || el.readOnly || el.disabled) return;
-el.value = String(el.value || '') + txt;
-dispatchInputEvents(el);
-};
-
-window.kbBackspace = function() {
-const el = window._kbTargetInput;
-if (!el || el.readOnly || el.disabled) return;
-const v = String(el.value || '');
-el.value = v.slice(0, -1);
-dispatchInputEvents(el);
-};
-
-window.kbClearAll = function() {
-const el = window._kbTargetInput;
-if (!el || el.readOnly || el.disabled) return;
-el.value = '';
-dispatchInputEvents(el);
-};
-
-window.kbToggleShift = function() {
-window._kbIsUpper = !window._kbIsUpper;
-window.renderCustomSmartKeyboard();
-};
-
-window.kbToggleSymbols = function() {
-window._kbIsSymbols = !window._kbIsSymbols;
-window.renderCustomSmartKeyboard();
-};
-
-window.kbPasteClipboard = async function() {
-const el = window._kbTargetInput;
-if (!el || el.readOnly || el.disabled) return;
-try {
-if (navigator.clipboard && navigator.clipboard.readText) {
-const t = await navigator.clipboard.readText();
-if (t) {
-el.value = String(el.value || '') + t.trim();
-dispatchInputEvents(el);
-}
-}
-} catch (e) {}
-};
-
-window.kbSwitchNativeKeyboard = function() {
-const el = window._kbTargetInput;
-window._kbForceNative = true;
-window.closeCustomSmartKeyboard();
-if (el) {
-el.removeAttribute('inputmode');
-el.focus();
-}
-setTimeout(() => { window._kbForceNative = false; }, 4000);
-};
-
-window.openCustomSmartKeyboardFor = function(el) {
-if (!el || el.readOnly || el.disabled || window._kbForceNative) return;
-const type = (el.getAttribute('type') || 'text').toLowerCase();
-if (['date', 'file', 'hidden', 'checkbox', 'radio', 'button', 'submit'].includes(type)) return;
-if (el.id === 'sub-date') return;
-
-window._kbTargetInput = el;
-if (!el.getAttribute('data-kb-bound')) {
-el.setAttribute('data-kb-bound', '1');
-el.addEventListener('input', () => window.updateKbPreview());
-}
-el.setAttribute('inputmode', 'none');
-window.renderCustomSmartKeyboard();
-window.updateKbPreview();
-const kb = document.getElementById('js-custom-smart-keyboard');
-if (kb) kb.classList.add('kb-open');
-setTimeout(() => {
-try { el.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch (e) {}
-}, 120);
-};
-
-window.closeCustomSmartKeyboard = function() {
-const kb = document.getElementById('js-custom-smart-keyboard');
-if (kb) kb.classList.remove('kb-open');
-};
-
-document.addEventListener('focusin', function(e) {
-const t = e.target;
-if (!t) return;
-const tag = (t.tagName || '').toUpperCase();
-if (tag === 'INPUT' || tag === 'TEXTAREA') {
-window.openCustomSmartKeyboardFor(t);
-}
-}, true);
-
-document.addEventListener('click', function(e) {
-const kb = document.getElementById('js-custom-smart-keyboard');
-if (!kb || !kb.classList.contains('kb-open')) return;
-const t = e.target;
-if (!t) return;
-if (kb.contains(t)) return;
-const tag = (t.tagName || '').toUpperCase();
-if (tag === 'INPUT' || tag === 'TEXTAREA' || t.closest('.input-group')) return;
-window.closeCustomSmartKeyboard();
-});
-})();
-</script>
 
 </body>
 </html>
